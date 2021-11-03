@@ -1,0 +1,46 @@
+.frmContainer {
+  margin-bottom: 40px;
+  &__calendar {
+    div[class="rdtPicker"] {
+      width: 300px;
+    }
+    table {
+      width: 300px;
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+
+    label {
+      display: block;
+      margin-right: 10px;
+    }
+    input[type="text"],
+    select {
+      width: 200px;
+      height: 36px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+      font-size: 16px;
+    }
+  }
+}
+.frmInput {
+  position: relative;
+}
+.errTxt {
+  position: absolute;
+  top: calc(100% + 3px);
+  display: block;
+  color: #f00;
+  font-size: 14px;
+}

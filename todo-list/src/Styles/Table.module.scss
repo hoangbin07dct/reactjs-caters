@@ -1,0 +1,41 @@
+.listStyle {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    th {
+      position: relative;
+      height: 40px;
+      padding: 5px 15px;
+      border: 1px solid #ccc;
+      background: #eaeaea;
+      cursor: pointer;
+      user-select: none;
+      &:nth-child(1) {
+        width: 60px;
+      }
+      &:nth-child(3) {
+        width: 180px;
+      }
+      &:nth-child(4) {
+        width: 150px;
+      }
+      &:nth-child(5) {
+        width: 200px;
+      }
+      &.sortAsc {
+        background: #ff0;
+      }
+      &.sortDesc {
+        background: #f00;
+      }
+    }
+    td {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      &.tdCenter {
+        text-align: center;
+      }
+    }
+  }
+}
